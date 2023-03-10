@@ -1,0 +1,2150 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AccessibilityComputationNairobiLandUseLocalCopy",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accessibility.AccessibilityComputationNairobiLandUseLocalCopy",
+            "projectName": "accessibility"
+        },
+        {
+            "type": "java",
+            "name": "SpatialGrid",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accessibility.SpatialGrid",
+            "projectName": "accessibility"
+        },
+        {
+            "type": "java",
+            "name": "VoronoiExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accessibility.VoronoiExample",
+            "projectName": "accessibility"
+        },
+        {
+            "type": "java",
+            "name": "AccessibilityGUI",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accessibility.run.AccessibilityGUI",
+            "projectName": "accessibility"
+        },
+        {
+            "type": "java",
+            "name": "RunAccessibilityExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accessibility.run.RunAccessibilityExample",
+            "projectName": "accessibility"
+        },
+        {
+            "type": "java",
+            "name": "AccessibilityOsmNetworkReader",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accessibility.utils.AccessibilityOsmNetworkReader",
+            "projectName": "accessibility"
+        },
+        {
+            "type": "java",
+            "name": "LeastCostPathTreeExtended",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accessibility.utils.LeastCostPathTreeExtended",
+            "projectName": "accessibility"
+        },
+        {
+            "type": "java",
+            "name": "RunAccidents",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.accidents.runExample.RunAccidents",
+            "projectName": "accidents"
+        },
+        {
+            "type": "java",
+            "name": "RunKNEventsAnalyzer",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.analysis.kai.RunKNEventsAnalyzer",
+            "projectName": "analysis"
+        },
+        {
+            "type": "java",
+            "name": "MainForQGisWriter",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.analysis.vsp.qgis.MainForQGisWriter",
+            "projectName": "analysis"
+        },
+        {
+            "type": "java",
+            "name": "RunTraveltimeValidationExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.analysis.vsp.traveltimedistance.RunTraveltimeValidationExample",
+            "projectName": "analysis"
+        },
+        {
+            "type": "java",
+            "name": "EventsToTravelDiaries",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.travelsummary.events2traveldiaries.EventsToTravelDiaries",
+            "projectName": "analysis"
+        },
+        {
+            "type": "java",
+            "name": "RunEventsToTravelDiaries",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.travelsummary.events2traveldiaries.RunEventsToTravelDiaries",
+            "projectName": "analysis"
+        },
+        {
+            "type": "java",
+            "name": "NoiseAnalysis",
+            "request": "launch",
+            "mainClass": "org.matsim.application.analysis.noise.NoiseAnalysis",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "ComparePlanModes",
+            "request": "launch",
+            "mainClass": "org.matsim.application.analysis.population.ComparePlanModes",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "SubTourAnalysis",
+            "request": "launch",
+            "mainClass": "org.matsim.application.analysis.population.SubTourAnalysis",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "CheckPtDelays",
+            "request": "launch",
+            "mainClass": "org.matsim.application.analysis.pt.CheckPtDelays",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "LinkStats",
+            "request": "launch",
+            "mainClass": "org.matsim.application.analysis.traffic.LinkStats",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "TravelTimeAnalysis",
+            "request": "launch",
+            "mainClass": "org.matsim.application.analysis.travelTimeValidation.TravelTimeAnalysis",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "TravelTimePatterns",
+            "request": "launch",
+            "mainClass": "org.matsim.application.analysis.travelTimeValidation.TravelTimePatterns",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "ShowGUI",
+            "request": "launch",
+            "mainClass": "org.matsim.application.commands.ShowGUI",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "ShapeFileTextLookup",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.ShapeFileTextLookup",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "CreateCountsFromBAStData",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.counts.CreateCountsFromBAStData",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "GenerateLookupTable",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.dataProcessing.GenerateLookupTable",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "GermanNutsTransformation",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.dataProcessing.GermanNutsTransformation",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "ReadFreightNetwork",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.dataProcessing.ReadFreightNetwork",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "DetermineAverageTruckLoad",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.optimization.DetermineAverageTruckLoad",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "PrepareCountingData",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.optimization.PrepareCountingData",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "GenerateGermanWideFreightTrips",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.toBeDeleted.GenerateGermanWideFreightTrips",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "ExtractRelevantFreightTrips",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.tripExtraction.ExtractRelevantFreightTrips",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "GenerateFreightPlans",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.freight.tripGeneration.GenerateFreightPlans",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "CreateNetworkFromSumo",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.network.CreateNetworkFromSumo",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "AdjustActivityToLinkDistances",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.AdjustActivityToLinkDistances",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "CheckCarAvailability",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.CheckCarAvailability",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "CleanPopulation",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.CleanPopulation",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "FixSubtourModes",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.FixSubtourModes",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "NormalizeTripModes",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.NormalizeTripModes",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "RemoveRoutesFromPlans",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.RemoveRoutesFromPlans",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "SplitActivityTypesDuration",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.SplitActivityTypesDuration",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "TrajectoryToPlans",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.population.TrajectoryToPlans",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "CreateTransitScheduleFromGtfs",
+            "request": "launch",
+            "mainClass": "org.matsim.application.prepare.pt.CreateTransitScheduleFromGtfs",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "FreightDemandGeneration",
+            "request": "launch",
+            "mainClass": "org.matsim.freightDemandGeneration.FreightDemandGeneration",
+            "projectName": "application"
+        },
+        {
+            "type": "java",
+            "name": "CreateTaxiVehicles",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.av.robotaxi.vehicles.CreateTaxiVehicles",
+            "projectName": "av"
+        },
+        {
+            "type": "java",
+            "name": "BicycleOsmNetworkReaderV2",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.bicycle.network.BicycleOsmNetworkReaderV2",
+            "projectName": "bicycle"
+        },
+        {
+            "type": "java",
+            "name": "CreateBicycleNetworkWithElevation",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.bicycle.network.CreateBicycleNetworkWithElevation",
+            "projectName": "bicycle"
+        },
+        {
+            "type": "java",
+            "name": "ElevationDataParser",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.bicycle.network.ElevationDataParser",
+            "projectName": "bicycle"
+        },
+        {
+            "type": "java",
+            "name": "RunBicycleExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.bicycle.run.RunBicycleExample",
+            "projectName": "bicycle"
+        },
+        {
+            "type": "java",
+            "name": "RunCadyts4CarExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.cadyts.run.RunCadyts4CarExample",
+            "projectName": "cadyts-integration"
+        },
+        {
+            "type": "java",
+            "name": "RunCarsharing",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.carsharing.runExample.RunCarsharing",
+            "projectName": "carsharing"
+        },
+        {
+            "type": "java",
+            "name": "RunJointDemandCarToggleJspritExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.commercialTrafficApplications.jointDemand.RunJointDemandCarToggleJspritExample",
+            "projectName": "commercial-traffic-applications"
+        },
+        {
+            "type": "java",
+            "name": "RunJointDemandCarExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.commercialTrafficApplications.jointDemand.examples.RunJointDemandCarExample",
+            "projectName": "commercial-traffic-applications"
+        },
+        {
+            "type": "java",
+            "name": "RunJointDemandDRTExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.commercialTrafficApplications.jointDemand.examples.RunJointDemandDRTExample",
+            "projectName": "commercial-traffic-applications"
+        },
+        {
+            "type": "java",
+            "name": "DecongestionRunExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.decongestion.DecongestionRunExample",
+            "projectName": "decongestion"
+        },
+        {
+            "type": "java",
+            "name": "DecongestionRunExampleFromConfig",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.decongestion.DecongestionRunExampleFromConfig",
+            "projectName": "decongestion"
+        },
+        {
+            "type": "java",
+            "name": "MinCostFlow",
+            "request": "launch",
+            "mainClass": "graphs.flows.MinCostFlow",
+            "projectName": "drt"
+        },
+        {
+            "type": "java",
+            "name": "MinCostFlowDense",
+            "request": "launch",
+            "mainClass": "graphs.flows.MinCostFlowDense",
+            "projectName": "drt"
+        },
+        {
+            "type": "java",
+            "name": "MinCostFlowSimple",
+            "request": "launch",
+            "mainClass": "graphs.flows.MinCostFlowSimple",
+            "projectName": "drt"
+        },
+        {
+            "type": "java",
+            "name": "DrtVehicleStoppingTaskWriter",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.drt.analysis.afterSimAnalysis.DrtVehicleStoppingTaskWriter",
+            "projectName": "drt"
+        },
+        {
+            "type": "java",
+            "name": "RunDrtScenario",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.drt.run.RunDrtScenario",
+            "projectName": "drt"
+        },
+        {
+            "type": "java",
+            "name": "CreateEmissionConfig",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.emissions.example.CreateEmissionConfig",
+            "projectName": "emissions"
+        },
+        {
+            "type": "java",
+            "name": "RunAverageEmissionToolOfflineExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.emissions.example.RunAverageEmissionToolOfflineExample",
+            "projectName": "emissions"
+        },
+        {
+            "type": "java",
+            "name": "RunDetailedEmissionToolOfflineExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.emissions.example.RunDetailedEmissionToolOfflineExample",
+            "projectName": "emissions"
+        },
+        {
+            "type": "java",
+            "name": "RunDetailedEmissionToolOnlineExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.emissions.example.RunDetailedEmissionToolOnlineExample",
+            "projectName": "emissions"
+        },
+        {
+            "type": "java",
+            "name": "RunControlerWS",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.eventsBasedPTRouter.controler.RunControlerWS",
+            "projectName": "events-based-pt-router"
+        },
+        {
+            "type": "java",
+            "name": "RunControlerWSV",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.eventsBasedPTRouter.controler.RunControlerWSV",
+            "projectName": "events-based-pt-router"
+        },
+        {
+            "type": "java",
+            "name": "RunControlerWW",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.eventsBasedPTRouter.controler.RunControlerWW",
+            "projectName": "events-based-pt-router"
+        },
+        {
+            "type": "java",
+            "name": "StopStopTimeCalculatorTuple",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.eventsBasedPTRouter.stopStopTimes.StopStopTimeCalculatorTuple",
+            "projectName": "events-based-pt-router"
+        },
+        {
+            "type": "java",
+            "name": "RunEvExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.ev.example.RunEvExample",
+            "projectName": "ev"
+        },
+        {
+            "type": "java",
+            "name": "RunEvExampleWithLTHConsumptionModel",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.ev.example.RunEvExampleWithLTHConsumptionModel",
+            "projectName": "ev"
+        },
+        {
+            "type": "java",
+            "name": "FreightScenarioCreator",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.FreightScenarioCreator",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "InitialCarrierPlanCreator",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.InitialCarrierPlanCreator",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "PassengerScenarioCreator",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.PassengerScenarioCreator",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "PlotPlans",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.PlotPlans",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "RunChessboard",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.RunChessboard",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "RunPassengerAlongWithCarriers",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.RunPassengerAlongWithCarriers",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "RunPassengerPlansFromConfig",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.RunPassengerPlansFromConfig",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "RunPassengerPlansFromScratch",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.freight.usecases.chessboard.RunPassengerPlansFromScratch",
+            "projectName": "freight"
+        },
+        {
+            "type": "java",
+            "name": "RunExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.hybridsim.run.RunExample",
+            "projectName": "hybridsim"
+        },
+        {
+            "type": "java",
+            "name": "RandomFromVarDistr",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.locationchoice.frozenepsilons.RandomFromVarDistr",
+            "projectName": "locationchoice"
+        },
+        {
+            "type": "java",
+            "name": "RunLocationChoiceBestResponse",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.locationchoice.frozenepsilons.RunLocationChoiceBestResponse",
+            "projectName": "locationchoice"
+        },
+        {
+            "type": "java",
+            "name": "RunLocationChoiceFrozenEpsilons",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.locationchoice.run.RunLocationChoiceFrozenEpsilons",
+            "projectName": "locationchoice"
+        },
+        {
+            "type": "java",
+            "name": "TestQuadTree",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.matrixbasedptrouter.TestQuadTree",
+            "projectName": "matrixbasedptrouter"
+        },
+        {
+            "type": "java",
+            "name": "RunMatrixBasedPTRouterExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.matrixbasedptrouter.example.RunMatrixBasedPTRouterExample",
+            "projectName": "matrixbasedptrouter"
+        },
+        {
+            "type": "java",
+            "name": "Benchmark",
+            "request": "launch",
+            "mainClass": "org.matsim.benchmark.Benchmark",
+            "projectName": "matsim-benchmark"
+        },
+        {
+            "type": "java",
+            "name": "RunSwissRailRaptorExample",
+            "request": "launch",
+            "mainClass": "ch.sbb.matsim.RunSwissRailRaptorExample",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "Controler",
+            "request": "launch",
+            "mainClass": "org.matsim.core.controler.Controler",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "OverrideCarTraveltimeTest",
+            "request": "launch",
+            "mainClass": "org.matsim.core.controler.OverrideCarTraveltimeTest",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "CppEventFileParser",
+            "request": "launch",
+            "mainClass": "org.matsim.core.mobsim.jdeqsim.util.CppEventFileParser",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "RunConfigurableQNetworkFactoryExample",
+            "request": "launch",
+            "mainClass": "org.matsim.core.mobsim.qsim.qnetsimengine.RunConfigurableQNetworkFactoryExample",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "RunFlexibleQNetworkFactoryExample",
+            "request": "launch",
+            "mainClass": "org.matsim.core.mobsim.qsim.qnetsimengine.RunFlexibleQNetworkFactoryExample",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "NetworkSimplifier",
+            "request": "launch",
+            "mainClass": "org.matsim.core.network.algorithms.NetworkSimplifier",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "RunIntersectionSimplifier",
+            "request": "launch",
+            "mainClass": "org.matsim.core.network.algorithms.intersectionSimplifier.RunIntersectionSimplifier",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "ConcaveHull",
+            "request": "launch",
+            "mainClass": "org.matsim.core.network.algorithms.intersectionSimplifier.containers.ConcaveHull",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "org.matsim.core.utils.charts.Demo",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "QuadTreeTest",
+            "request": "launch",
+            "mainClass": "org.matsim.core.utils.collections.QuadTreeTest",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "CipherUtils",
+            "request": "launch",
+            "mainClass": "org.matsim.core.utils.io.CipherUtils",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "TransitScheduleValidator",
+            "request": "launch",
+            "mainClass": "org.matsim.pt.utils.TransitScheduleValidator",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "ConvertOldPlanCalcScoreConfigGroup",
+            "request": "launch",
+            "mainClass": "org.matsim.run.ConvertOldPlanCalcScoreConfigGroup",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "CreateFullConfig",
+            "request": "launch",
+            "mainClass": "org.matsim.run.CreateFullConfig",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "CreateSelectedPlansTables",
+            "request": "launch",
+            "mainClass": "org.matsim.run.CreateSelectedPlansTables",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "Events2Snapshot",
+            "request": "launch",
+            "mainClass": "org.matsim.run.Events2Snapshot",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "InitRoutes",
+            "request": "launch",
+            "mainClass": "org.matsim.run.InitRoutes",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "NetworkCleaner",
+            "request": "launch",
+            "mainClass": "org.matsim.run.NetworkCleaner",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "ReleaseInfo",
+            "request": "launch",
+            "mainClass": "org.matsim.run.ReleaseInfo",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "RunMatsim",
+            "request": "launch",
+            "mainClass": "org.matsim.run.RunMatsim",
+            "projectName": "matsim",
+            "args":[""]
+        },
+        {
+            "type": "java",
+            "name": "TeleAtlas2Network",
+            "request": "launch",
+            "mainClass": "org.matsim.run.TeleAtlas2Network",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "XY2Links",
+            "request": "launch",
+            "mainClass": "org.matsim.run.XY2Links",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "GUnZipper",
+            "request": "launch",
+            "mainClass": "org.matsim.run.gui.GUnZipper",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "Gui",
+            "request": "launch",
+            "mainClass": "org.matsim.run.gui.Gui",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "ScheduleValidatorWindow",
+            "request": "launch",
+            "mainClass": "org.matsim.run.gui.ScheduleValidatorWindow",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "EventsFileComparator",
+            "request": "launch",
+            "mainClass": "org.matsim.utils.eventsfilecomparison.EventsFileComparator",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "Links2ESRIShape",
+            "request": "launch",
+            "mainClass": "org.matsim.utils.gis.matsim2esri.network.Links2ESRIShape",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "Nodes2ESRIShape",
+            "request": "launch",
+            "mainClass": "org.matsim.utils.gis.matsim2esri.network.Nodes2ESRIShape",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "SelectedPlans2ESRIShape",
+            "request": "launch",
+            "mainClass": "org.matsim.utils.gis.matsim2esri.plans.SelectedPlans2ESRIShape",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "LeastCostPathTree",
+            "request": "launch",
+            "mainClass": "org.matsim.utils.leastcostpathtree.LeastCostPathTree",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "RunObjectAttributesExample",
+            "request": "launch",
+            "mainClass": "org.matsim.utils.objectattributes.RunObjectAttributesExample",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "ExampleWithinDayController",
+            "request": "launch",
+            "mainClass": "org.matsim.withinday.controller.ExampleWithinDayController",
+            "projectName": "matsim"
+        },
+        {
+            "type": "java",
+            "name": "PMain",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.PMain",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "RunConfigurableMinibusExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.RunConfigurableMinibusExample",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "RunMinibus",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.RunMinibus",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "IatbrAna",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.ana.IatbrAna",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "TrbAna",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.ana.TrbAna",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "PTransitLineMerger",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.performance.PTransitLineMerger",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "ActivityLocationsParatransitUser",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.stats.ActivityLocationsParatransitUser",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "Log2Gexf",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.minibus.stats.operatorLogger.Log2Gexf",
+            "projectName": "minibus"
+        },
+        {
+            "type": "java",
+            "name": "RunMultimodalExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.multimodal.RunMultimodalExample",
+            "projectName": "multimodal"
+        },
+        {
+            "type": "java",
+            "name": "MergeNoiseCSVFile",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.noise.MergeNoiseCSVFile",
+            "projectName": "noise"
+        },
+        {
+            "type": "java",
+            "name": "OSM2Intersection",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.noise.OSM2Intersection",
+            "projectName": "noise"
+        },
+        {
+            "type": "java",
+            "name": "OSM2Surface",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.noise.OSM2Surface",
+            "projectName": "noise"
+        },
+        {
+            "type": "java",
+            "name": "ProcessNoiseImmissions",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.noise.ProcessNoiseImmissions",
+            "projectName": "noise"
+        },
+        {
+            "type": "java",
+            "name": "NoiseOfflineCalculationExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.noise.examples.NoiseOfflineCalculationExample",
+            "projectName": "noise"
+        },
+        {
+            "type": "java",
+            "name": "NoiseOnlineControlerExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.noise.examples.NoiseOnlineControlerExample",
+            "projectName": "noise"
+        },
+        {
+            "type": "java",
+            "name": "RunFullyConfiguredNetworkReader",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.osm.examples.RunFullyConfiguredNetworkReader",
+            "projectName": "osm"
+        },
+        {
+            "type": "java",
+            "name": "RunSimpleNetworkReader",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.osm.examples.RunSimpleNetworkReader",
+            "projectName": "osm"
+        },
+        {
+            "type": "java",
+            "name": "OTFVis",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.otfvis.OTFVis",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "OTFVisGUI",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.otfvis.OTFVisGUI",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "RunOTFVis",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.otfvis.RunOTFVis",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "AccessEgressDemo",
+            "request": "launch",
+            "mainClass": "org.matsim.pt.demo.AccessEgressDemo",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "BlockingStopDemo",
+            "request": "launch",
+            "mainClass": "org.matsim.pt.demo.BlockingStopDemo",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "TwoLinesDemo",
+            "request": "launch",
+            "mainClass": "org.matsim.pt.demo.TwoLinesDemo",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T0_RunWithQSim",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T0_RunWithQSim",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T1_DisplayNetwork",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T1_DisplayNetwork",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T2_RunControlerWithMovieOutput",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T2_RunControlerWithMovieOutput",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T4_PlayMovie",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T4_PlayMovie",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T5_Teleportation",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T5_Teleportation",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T6_Transit",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T6_Transit",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T7_ConvertEventsToMovie",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T7_ConvertEventsToMovie",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "T8_Map",
+            "request": "launch",
+            "mainClass": "org.matsim.vis.otfvis.checklists.T8_Map",
+            "projectName": "otfvis"
+        },
+        {
+            "type": "java",
+            "name": "RunParkingChoiceExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.parking.parkingchoice.run.RunParkingChoiceExample",
+            "projectName": "parking"
+        },
+        {
+            "type": "java",
+            "name": "RunParkingCostExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.parking.parkingcost.RunParkingCostExample",
+            "projectName": "parking"
+        },
+        {
+            "type": "java",
+            "name": "RunAreaAnalysis",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.parking.parkingproxy.run.RunAreaAnalysis",
+            "projectName": "parking"
+        },
+        {
+            "type": "java",
+            "name": "RunWithParkingProxy",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.parking.parkingproxy.run.RunWithParkingProxy",
+            "projectName": "parking"
+        },
+        {
+            "type": "java",
+            "name": "RunParkingSearchExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.parking.parkingsearch.RunParkingSearchExample",
+            "projectName": "parking"
+        },
+        {
+            "type": "java",
+            "name": "ChoiceGenerationControler",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.ChoiceGenerationControler",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "RunPSim",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.RunPSim",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "MasterControler",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.distributed.MasterControler",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "SlaveControler",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.distributed.SlaveControler",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "Squatter",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.distributed.Squatter",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "SimpleFileClient",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.distributed.io.SimpleFileClient",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "SimpleFileServer",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.distributed.io.SimpleFileServer",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "CollectionUtils",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.pseudosimulation.util.CollectionUtils",
+            "projectName": "pseudosimulation"
+        },
+        {
+            "type": "java",
+            "name": "RunRoadPricingExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.roadpricing.run.RunRoadPricingExample",
+            "projectName": "roadpricing"
+        },
+        {
+            "type": "java",
+            "name": "RunRoadPricingFromCode",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.roadpricing.run.RunRoadPricingFromCode",
+            "projectName": "roadpricing"
+        },
+        {
+            "type": "java",
+            "name": "RunRoadPricingUsingTollFactorExample",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.roadpricing.run.RunRoadPricingUsingTollFactorExample",
+            "projectName": "roadpricing"
+        },
+        {
+            "type": "java",
+            "name": "RunSBBExtension",
+            "request": "launch",
+            "mainClass": "ch.sbb.matsim.RunSBBExtension",
+            "projectName": "sbb-extensions"
+        },
+        {
+            "type": "java",
+            "name": "CalculateSkimMatrices",
+            "request": "launch",
+            "mainClass": "ch.sbb.matsim.analysis.skims.CalculateSkimMatrices",
+            "projectName": "sbb-extensions"
+        },
+        {
+            "type": "java",
+            "name": "MatricesToXY",
+            "request": "launch",
+            "mainClass": "ch.sbb.matsim.analysis.skims.MatricesToXY",
+            "projectName": "sbb-extensions"
+        },
+        {
+            "type": "java",
+            "name": "RunCarsharing(1)",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.shared_mobility.examples.RunCarsharing",
+            "projectName": "shared_mobility"
+        },
+        {
+            "type": "java",
+            "name": "RunParisVelib",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.shared_mobility.examples.RunParisVelib",
+            "projectName": "shared_mobility"
+        },
+        {
+            "type": "java",
+            "name": "RunTeleportationBikesharing",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.shared_mobility.examples.RunTeleportationBikesharing",
+            "projectName": "shared_mobility"
+        },
+        {
+            "type": "java",
+            "name": "ReadGBFS",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.shared_mobility.utils.ReadGBFS",
+            "projectName": "shared_mobility"
+        },
+        {
+            "type": "java",
+            "name": "WriteStationShapefile",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.shared_mobility.utils.WriteStationShapefile",
+            "projectName": "shared_mobility"
+        },
+        {
+            "type": "java",
+            "name": "RunAdaptiveSignalsExample",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.adaptiveSignals.RunAdaptiveSignalsExample",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "CreateIntergreensExample",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.CreateIntergreensExample",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "CreateSignalInputExample",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.CreateSignalInputExample",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "CreateSignalInputWithLanesExample",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.CreateSignalInputWithLanesExample",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "MatsimWithFixedTimeSignalsGUI",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.MatsimWithFixedTimeSignalsGUI",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "RunSignalSystemsExample",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.RunSignalSystemsExample",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "RunSignalSystemsExampleWithHoles",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.RunSignalSystemsExampleWithHoles",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "RunVisualizeSignalScenarioWithLanesGUITest",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.RunVisualizeSignalScenarioWithLanesGUITest",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "VisualizeSignalScenario",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.VisualizeSignalScenario",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "VisualizeSignalScenarioWithLanes",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.fixedTimeSignals.VisualizeSignalScenarioWithLanes",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "RunSignalsAndLanesOsmNetworkReader",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.runSignalsAndLanesOsmNetworkReader.RunSignalsAndLanesOsmNetworkReader",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "RunSimpleResponsiveSignalExample",
+            "request": "launch",
+            "mainClass": "org.matsim.codeexamples.simpleResponsiveSignalEngine.RunSimpleResponsiveSignalExample",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "SylviaPreprocessData",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.signals.controller.sylvia.SylviaPreprocessData",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "CalculateSimplifiedIntergreens",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.signals.utils.CalculateSimplifiedIntergreens",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "CreateAllDayGreenFromSignalControl",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.signals.utils.CreateAllDayGreenFromSignalControl",
+            "projectName": "signals"
+        },
+        {
+            "type": "java",
+            "name": "RunExampleSocialSimulation",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.socnetsim.examples.RunExampleSocialSimulation",
+            "projectName": "socnetsim"
+        },
+        {
+            "type": "java",
+            "name": "RunSocialNetwork",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.socnetsim.run.RunSocialNetwork",
+            "projectName": "socnetsim"
+        },
+        {
+            "type": "java",
+            "name": "CountNSelectedJointTripsPerAgent",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.socnetsim.usage.analysis.scripts.CountNSelectedJointTripsPerAgent",
+            "projectName": "socnetsim"
+        },
+        {
+            "type": "java",
+            "name": "CountTripsPerTypeOfOriginAndDestination",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.socnetsim.usage.analysis.scripts.CountTripsPerTypeOfOriginAndDestination",
+            "projectName": "socnetsim"
+        },
+        {
+            "type": "java",
+            "name": "DumpSizeOfSelectedJointPlans",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.socnetsim.usage.analysis.scripts.DumpSizeOfSelectedJointPlans",
+            "projectName": "socnetsim"
+        },
+        {
+            "type": "java",
+            "name": "ExtractDriverBeeflyDetours",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.socnetsim.usage.analysis.scripts.ExtractDriverBeeflyDetours",
+            "projectName": "socnetsim"
+        },
+        {
+            "type": "java",
+            "name": "SumoNetworkConverter",
+            "request": "launch",
+            "mainClass": "org.matsim.contrib.sumo.SumoNetworkConverter",
+            "projectName": "sumo"
+        },
+        {
+            "type": "java",
+            "name": "LocationMap",
+            "request": "launch",
+            "mainClass": "playground.vsp.analysis.modules.ptAccessibility.activity.LocationMap",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PtLines2PaxAnalysis",
+            "request": "launch",
+            "mainClass": "playground.vsp.analysis.modules.ptLines2PaxAnalysis.PtLines2PaxAnalysis",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CreateRscript",
+            "request": "launch",
+            "mainClass": "playground.vsp.analysis.modules.ptRoutes2paxAnalysis.CreateRscript",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PtRoutes2PaxAnalysis",
+            "request": "launch",
+            "mainClass": "playground.vsp.analysis.modules.ptRoutes2paxAnalysis.PtRoutes2PaxAnalysis",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "TransitScheduleAnalyserToCSVandTEX",
+            "request": "launch",
+            "mainClass": "playground.vsp.analysis.modules.transitScheduleAnalyser.TransitScheduleAnalyserToCSVandTEX",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "TestMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.bvgAna.TestMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunAnalyses",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.bvgAna.mrieser.RunAnalyses",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "Fcd",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.fcd.Fcd",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "DataPrepare",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.bvg09.DataPrepare",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "HafasReader",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.bvg09.HafasReader",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "BayAreaMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.osm.BayAreaMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "ClipIncompleteEntitiesMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.osm.ClipIncompleteEntitiesMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "OsmMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.osm.OsmMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "OsmPrepare",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.osm.OsmPrepare",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "OsmTransitMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.osm.OsmTransitMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "StoreTest",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.mzilske.osm.StoreTest",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "OsmTransitMain(1)",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.OsmTransitMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PTCountsNetworkSimplifier",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.PTCountsNetworkSimplifier",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PTCountsOsm2Matsim",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.PTCountsOsm2Matsim",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "ConvertTSV2Counts",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.convertCountsData.ConvertTSV2Counts",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "HafasOSMMerger",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.hafasOSMMerger.HafasOSMMerger",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SimpleHafasOsmMerger",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.hafasOSMMerger.SimpleHafasOsmMerger",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "Osm2Counts",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.osm2counts.Osm2Counts",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CheckRohdatenIntegrity",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.osmBB.rohdata.CheckRohdatenIntegrity",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "Line2StopRelationAnalyzer",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.Line2StopRelationAnalyzer",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PlansActs2Txt",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.PlansActs2Txt",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RemoveTransitActsFromPop",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.RemoveTransitActsFromPop",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RouteAllModesAsCar",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.RouteAllModesAsCar",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "NetworkAndMore2ESRI",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.compareLinkStats.NetworkAndMore2ESRI",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CountVehOnLinks",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.countVehOnLinks.CountVehOnLinks",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PackageMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.countVehOnLinks.PackageMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "FilterStuckScores",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.filterStuckScores.FilterStuckScores",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CalculateModeShareForRegion",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.getModeShareForRegion.CalculateModeShareForRegion",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "Nce2Gexf",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.nce2gexf.Nce2Gexf",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "Plans2Gexf",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.ana.plans2gexf.Plans2Gexf",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PopGenerator",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.dummy.PopGenerator",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "dummyDataCreator",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.dummy.dummyDataCreator",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CountParatransitVeh2Gexf",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.net.CountParatransitVeh2Gexf",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "Network2Gexf",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.net.Network2Gexf",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "OSM2MATSim",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.net.OSM2MATSim",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "AddPrefixToPersonId",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.AddPrefixToPersonId",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "DistributeEndTime",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.DistributeEndTime",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "DuplicatePlans",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.DuplicatePlans",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "FilterPerson",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.FilterPerson",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "FilterPersonPlan",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.FilterPersonPlan",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "FilterPopulationByShape",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.FilterPopulationByShape",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "FilterSelectedPlan",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.FilterSelectedPlan",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "MoveAllPersonActsFromAreaToCoord",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.MoveAllPersonActsFromAreaToCoord",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SetPersonCoordsToBoundingBox",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.SetPersonCoordsToBoundingBox",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "ShuffleCoords",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.ShuffleCoords",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SimpleXY2Links",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.SimpleXY2Links",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "StripPersonPlan",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pop.StripPersonPlan",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PTNetworkSimplifier",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pt.PTNetworkSimplifier",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PTOsm2Matsim",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pt.PTOsm2Matsim",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SpandauSchedule",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pt.SpandauSchedule",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "TransitLineRemover",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pt.TransitLineRemover",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "TransitSchedule2Tikz",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pt.transitSchedule2Tikz.TransitSchedule2Tikz",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "TransitSchedule2Shape",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.pt.transitSchedule2shape.TransitSchedule2Shape",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "EventsEnricher",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.var.EventsEnricher",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "FileComparison",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.var.FileComparison",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "GenericPtRouteFixer",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.var.GenericPtRouteFixer",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "Map2Gexf",
+            "request": "launch",
+            "mainClass": "playground.vsp.andreas.utils.var.Map2Gexf",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "BuildingEnergyAnalyzerMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.buildingEnergy.BuildingEnergyAnalyzerMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "BuildingEnergyRunnerMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.buildingEnergy.BuildingEnergyRunnerMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "LinkActivityCalculationFromEventsMain",
+            "request": "launch",
+            "mainClass": "playground.vsp.buildingEnergy.linkOccupancy.LinkActivityCalculationFromEventsMain",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunEquil",
+            "request": "launch",
+            "mainClass": "playground.vsp.buildingEnergy.linkOccupancy.RunEquil",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CompareVerbleibendVsNullfall",
+            "request": "launch",
+            "mainClass": "playground.vsp.bvwp.CompareVerbleibendVsNullfall",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IVVReaderV2",
+            "request": "launch",
+            "mainClass": "playground.vsp.bvwp.IVVReaderV2",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationA14MagdeburgMStendal",
+            "request": "launch",
+            "mainClass": "playground.vsp.bvwp.IllustrationA14MagdeburgMStendal",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationFictiveExamplePV",
+            "request": "launch",
+            "mainClass": "playground.vsp.bvwp.IllustrationFictiveExamplePV",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationZielnetz",
+            "request": "launch",
+            "mainClass": "playground.vsp.bvwp.IllustrationZielnetz",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "MultiDimensionalArray",
+            "request": "launch",
+            "mainClass": "playground.vsp.bvwp.MultiDimensionalArray",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunSimpleExample",
+            "request": "launch",
+            "mainClass": "playground.vsp.congestion.RunSimpleExample",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CongestionEventsWriter",
+            "request": "launch",
+            "mainClass": "playground.vsp.congestion.analysis.CongestionEventsWriter",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CORINELandCoverCoordsModifier",
+            "request": "launch",
+            "mainClass": "playground.vsp.corineLandcover.CORINELandCoverCoordsModifier",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CorineLandCoverData",
+            "request": "launch",
+            "mainClass": "playground.vsp.corineLandcover.CorineLandCoverData",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CommuterGenerator",
+            "request": "launch",
+            "mainClass": "playground.vsp.demandde.commuterDemandCottbus.CommuterGenerator",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "TSBASt2Count",
+            "request": "launch",
+            "mainClass": "playground.vsp.demandde.counts.TSBASt2Count",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PopulationMerger",
+            "request": "launch",
+            "mainClass": "playground.vsp.demandde.munich.PopulationMerger",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CreatePendlerDemand",
+            "request": "launch",
+            "mainClass": "playground.vsp.demandde.pendlermatrix.CreatePendlerDemand",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "GVPlanReader",
+            "request": "launch",
+            "mainClass": "playground.vsp.demandde.pendlermatrix.GVPlanReader",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CreateDemand",
+            "request": "launch",
+            "mainClass": "playground.vsp.demandde.prognose2025.CreateDemand",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CompanyDataRetriever",
+            "request": "launch",
+            "mainClass": "playground.vsp.demandde.unternehmen.CompanyDataRetriever",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunUrbanEVExample",
+            "request": "launch",
+            "mainClass": "playground.vsp.ev.RunUrbanEVExample",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "LinkTurnDirectionAttributesFromGraphHopper",
+            "request": "launch",
+            "mainClass": "playground.vsp.flowEfficiency.LinkTurnDirectionAttributesFromGraphHopper",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CensusReader",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.cemdap.input.CensusReader",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CommuterFileReaderV2",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.cemdap.input.CommuterFileReaderV2",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SynPopCreator",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.cemdap.input.SynPopCreator",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SynPopCreatorChildren",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.cemdap.input.SynPopCreatorChildren",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "ZoneAndLOSGeneratorV2",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.cemdap.input.ZoneAndLOSGeneratorV2",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "CemdapOutput2MatsimPlansConverter",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.cemdap.output.CemdapOutput2MatsimPlansConverter",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PlanFileModifier",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.planmodification.PlanFileModifier",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunCorineLandCoverCoordsModifier",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.planmodification.RunCorineLandCoverCoordsModifier",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SampledPlansMerger",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.planmodification.SampledPlansMerger",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "SplitActivityTypesBasedOnDuration",
+            "request": "launch",
+            "mainClass": "playground.vsp.openberlinscenario.planmodification.SplitActivityTypesBasedOnDuration",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "JobScriptWriter",
+            "request": "launch",
+            "mainClass": "playground.vsp.parametricRuns.JobScriptWriter",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "ParametricRunsExample",
+            "request": "launch",
+            "mainClass": "playground.vsp.parametricRuns.ParametricRunsExample",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PRRunner",
+            "request": "launch",
+            "mainClass": "playground.vsp.parkAndRide.example.PRRunner",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "PRPrepareRunner",
+            "request": "launch",
+            "mainClass": "playground.vsp.parkAndRide.prepare.PRPrepareRunner",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunExamplePtDisturbances",
+            "request": "launch",
+            "mainClass": "playground.vsp.pt.ptdisturbances.RunExamplePtDisturbances",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunTransitRouteTrimmerBerlinExample",
+            "request": "launch",
+            "mainClass": "playground.vsp.pt.transitRouteTrimmer.RunTransitRouteTrimmerBerlinExample",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunTransitRouteTrimmerBerlinSimpleExample",
+            "request": "launch",
+            "mainClass": "playground.vsp.pt.transitRouteTrimmer.RunTransitRouteTrimmerBerlinSimpleExample",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "RunOTFVisDebugRandomizedTransitRouterTravelTimeAndDisutility",
+            "request": "launch",
+            "mainClass": "playground.vsp.randomizedtransitrouter.RunOTFVisDebugRandomizedTransitRouterTravelTimeAndDisutility",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationAP200PV",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.IllustrationAP200PV",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationFictiveExamplePV(1)",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.IllustrationFictiveExamplePV",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationFictiveExamplePVwithoutOldUsers",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.IllustrationFictiveExamplePVwithoutOldUsers",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationsKarlsruheBaselGV",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.IllustrationsKarlsruheBaselGV",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationsSep2012GV",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.IllustrationsSep2012GV",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationsSep2012PV",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.IllustrationsSep2012PV",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "IllustrationsZZOther",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.IllustrationsZZOther",
+            "projectName": "vsp"
+        },
+        {
+            "type": "java",
+            "name": "ScenarioKarlsruheBaselGV",
+            "request": "launch",
+            "mainClass": "playground.vsp.zzArchive.bvwpOld.ScenarioKarlsruheBaselGV",
+            "projectName": "vsp"
+        }
+    ]
+}
