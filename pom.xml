@@ -425,7 +425,7 @@
                         </descriptorRefs>
                         <archive>
                             <manifest>
-                                <mainClass>org.matsim.run.RunMatsim</mainClass>
+                                <mainClass>org.matsim.run.RunMatsim </mainClass>
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                                 <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                             </manifest>

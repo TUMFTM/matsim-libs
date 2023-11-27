@@ -31,4 +31,4 @@ RUN apt-get update && apt-get install -y \
     && mkdir -p ${MATSIM_INPUT} \
     && mkdir -p ${MATSIM_OUTPUT}
 VOLUME ${APP_DIR}/data
-ENTRYPOINT ["./docker-entrypoint.sh", "java", "-jar", "matsim.jar", "/opt/matsim/data/input/config.xml"]
+ENTRYPOINT ["./docker-entrypoint.sh", "java", "-Xms132g", "-Xmx132g", "-jar", "matsim.jar", "/opt/matsim/data/input/config.xml"]

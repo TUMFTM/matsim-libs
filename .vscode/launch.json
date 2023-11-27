@@ -744,7 +744,7 @@
             "request": "launch",
             "mainClass": "org.matsim.run.RunMatsim",
             "projectName": "matsim",
-            "args":[""]
+            "args":["C:/models/test/fullConfig_noPT.xml"]
         },
         {
             "type": "java",
