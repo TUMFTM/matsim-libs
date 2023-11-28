@@ -44,8 +44,6 @@ mvn install --also-make --projects matsim
 
 ## Binaries
 
-Releases (also PR-based and weekly releases) and snapshots can be found at https://repo.matsim.org/.
-
 An example how to get started with your own project, including a complete pom.xml, is at https://github.com/matsim-org/matsim-example-project .
 
 Code examples are at https://github.com/matsim-org/matsim-code-examples .
