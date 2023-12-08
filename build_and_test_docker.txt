@@ -1,2 +1,0 @@
-DOCKER_BUILDKIT=1 docker build -t mcube-matsim-libs .
-docker run -d --name mcube-matsim-libs --pull=never -v $(pwd):/opt/matsim/data/input:ro -v $(pwd)/output:/opt/matsim/data/output mcube-matsim-libs

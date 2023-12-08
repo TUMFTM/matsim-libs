@@ -1,0 +1,25 @@
+version: "3.4"
+services:
+  matsim:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: matsim-docker
+    hostname: matsim
+    restart: never
+    deploy:
+      mode: 'global'
+    ports: []
+  matsim-debug:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: matsim-docker
+    hostname: matsim
+    entrypoint: /bin/bash
+    restart: never
+    deploy:
+      mode: 'global'
+    ports: []
+    volumes:
+      - .:/opt/matsim

@@ -11,6 +11,6 @@ matsimExamples
 *.orig
 matsim/docs/doxygen/html
 matsim/src/main/java/Doxyfile
-
+target
 # ignore output directories:
 output/

@@ -3,6 +3,15 @@
 
 QUICK=-Dmaven.test.skip -Dmaven.javadoc.skip -Dsource.skip -Dassembly.skipAssembly=true -DskipTests --offline
 
+#### Docker Settings ####
+ROOT_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+DOCKER_ARGS:=-DskipTests=true -T1C
+#### Customize
+CONTRIBS:=accidents accessibility
+PROJECT:=matsim
+#PROJECT:=project
+####!Docker Settings ####
+
 .PHONY: hs hybridsim
 
 hs: hybridsim
@@ -22,11 +31,14 @@ matsim-quick:
 quick:
 	mvn clean install ${QUICK}
 
-
-#	cd matsim ; mvn clean ; mvn install -DskipTests=true 
-##	cd contribs ; mvn clean ; mvn install --fail-at-end -DskipTests=true
-#	cd contribs/analysis ; mvn clean ; mvn install --fail-at-end -DskipTests=true
-#	cd contribs/roadpricing ; mvn clean ; mvn install --fail-at-end -DskipTests=true
-#	cd contribs/noise ; mvn clean ; mvn install --fail-at-end -DskipTests=true
-##	cd playgrounds; mvn clean ; mvn install --fail-at-end -DskipTests=true
-#	cd playgrounds/kairun ; mvn clean ; mvn -Prelease -DskipTests=true
+docker-build:
+####Base######
+	cd matsim ; mvn clean ; mvn install ${DOCKER_ARGS}
+####Contribs######
+	@for i in $(CONTRIBS); do \
+		cd "${ROOT_DIR}/contribs/$$i" ; mvn clean ; mvn install --fail-at-end ${DOCKER_ARGS}; \
+	done
+####Compile Project######
+	mvn -f pom.xml clean package -P docker --projects ${PROJECT} ${DOCKER_ARGS} -am -nsu
+	echo "Project: ${PROJECT}\nContribs: ${CONTRIBS}" > BANNER.txt
+####!Docker-Build######

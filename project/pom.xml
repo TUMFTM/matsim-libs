@@ -1,0 +1,244 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.tum</groupId>
+	<artifactId>matsim-project1</artifactId>
+	<packaging>jar</packaging>
+	<version>master-SNAPSHOT</version>
+
+	<parent>
+		<groupId>org.matsim</groupId>
+		<artifactId>matsim-all</artifactId>
+		<!-- This is where we change the matsim version. Maven does not allow using properties in the parent declaration (like ${matsim.version}).
+		     Therefore we need to use a fixed value here and then refer to the matsim version with ${project.parent.version} -->
+		<!-- Options: stable build based on PR-based (e.g. 15.0-PR2344), weekly (e.g. 15.0-2023w01) or official (e.g. 14.0) releases -->
+		<!--<version>15.0-2023w15</version>-->
+		<!--<version>15.0-PR2369</version>-->
+		<version>15.0</version>
+	</parent>
+
+	<name>MATSim code examples</name>
+	<description>MATSim code examples</description>
+
+	<properties>
+		<matsim.version>${project.parent.version}</matsim.version>
+		<maven.compiler.release>17</maven.compiler.release>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<repositories>
+		<!--Note that in general repositories are not transitive, so they need to be repeated at every level where needed.-->
+		<!-- for accessing the parent POM -->
+		<repository>
+			<id>matsim </id>
+			<url>https://repo.matsim.org/repository/matsim</url>
+		</repository>
+		<!-- for dependencies of osm-network-reader -->
+		<repository>
+			<id>topobyte</id>
+			<url>https://mvn.topobyte.de</url>
+		</repository>
+		<!-- for dependencies of osm-network-reader -->
+		<repository>
+			<id>slimjars</id>
+			<url>https://mvn.slimjars.com</url>
+		</repository>
+		<repository>
+			<id>jzy3d</id>
+			<url>https://maven.jzy3d.org/releases/</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+		<!--MATSim core:-->
+		<dependency>
+			<groupId>org.matsim</groupId>
+			<artifactId>matsim</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- to get MatsimTestUtils -->
+		<dependency>
+			<groupId>org.matsim</groupId>
+			<artifactId>matsim</artifactId>
+			<type>test-jar</type>
+			<version>${project.parent.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!--to get ExamplesUtils:-->
+		<dependency>
+			<groupId>org.matsim</groupId>
+			<artifactId>matsim-examples</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- Include some MATSim extensions -->
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>minibus</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>otfvis</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>roadpricing</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>taxi</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>av</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>freight</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>bicycle</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>osm</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>emissions</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>discrete_mode_choice</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>locationchoice</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>application</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- Include the JUnit testing library -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.4.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<shadedArtifactAttached>true</shadedArtifactAttached>
+							<shadedClassifierName>shaded</shadedClassifierName>
+							<createDependencyReducedPom>false</createDependencyReducedPom>
+							<outputFile>${project.basedir}/${project.build.finalName}.jar</outputFile>
+							<transformers>
+								<!-- This bit sets the main class for the executable jar as you otherwise would with the assembly plugin -->
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<manifestEntries>
+										<Main-Class>org.matsim.codeexamples.gui.MATSimGUI</Main-Class>
+										<Specification-Vendor>org.matsim</Specification-Vendor>
+										<Implementation-Vendor>org.matsim</Implementation-Vendor>
+										<Implementation-Version>${project.version}</Implementation-Version>
+										<Multi-Release>true</Multi-Release>
+									</manifestEntries>
+								</transformer>
+								<!-- This bit merges the various GeoTools META-INF/services files         -->
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+							</transformers>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+									<excludes>
+										<!-- exclude jar signatures -->
+										<exclude>META-INF/*.SF</exclude>
+										<exclude>META-INF/*.DSA</exclude>
+										<exclude>META-INF/*.RSA</exclude>
+									</excludes>
+								</filter>
+							</filters>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>docker</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>3.6.0</version>
+						<executions>
+							<execution>
+								<id>make-assembly</id>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<outputDirectory>${session.executionRootDirectory}/target</outputDirectory>
+							<finalName>matsim-bundle</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<linksource>true</linksource>
+							<doclint>none</doclint>
+							<quiet>true</quiet>
+							<archive>
+								<manifest>
+									<mainClass>org.tum.run.RunMatsim</mainClass>
+									<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+								</manifest>
+								<manifestEntries>
+									<Specification-Vendor>org.tum</Specification-Vendor>
+									<Implementation-Vendor>org.tum</Implementation-Vendor>
+								</manifestEntries>
+							</archive>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

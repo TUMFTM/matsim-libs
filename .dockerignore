@@ -1,0 +1,5 @@
+.github
+.vscode
+Dockerfile
+docker-compose.yml
+target
