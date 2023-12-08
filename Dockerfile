@@ -22,6 +22,8 @@ RUN chmod +x ./matsim.jar
 ENV MATSIM_HOME=${APP_DIR} \
     MATSIM_INPUT=${APP_DIR}/data/input \
     MATSIM_OUTPUT=${APP_DIR}/data/output
+ENV INIRAM '-Xms16g'
+ENV MAXRAM '-Xms16g'
 ARG COMMIT
 ENV COMMIT ${COMMIT}
 RUN apt-get update && apt-get install -y \
@@ -31,4 +33,4 @@ RUN apt-get update && apt-get install -y \
     && mkdir -p ${MATSIM_INPUT} \
     && mkdir -p ${MATSIM_OUTPUT}
 VOLUME ${APP_DIR}/data
-ENTRYPOINT ["./docker-entrypoint.sh", "java", "-Xms132g", "-Xmx132g", "-jar", "matsim.jar", "/opt/matsim/data/input/config.xml"]
+ENTRYPOINT ["./docker-entrypoint.sh"]
