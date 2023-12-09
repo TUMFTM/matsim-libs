@@ -23,7 +23,7 @@ ENV MATSIM_HOME=${APP_DIR} \
     MATSIM_INPUT=${APP_DIR}/data/input \
     MATSIM_OUTPUT=${APP_DIR}/data/output
 ENV INIRAM '-Xms30g'
-ENV MAXRAM '-Xms30g'
+ENV MAXRAM '-Xmx30g'
 ARG COMMIT
 ENV COMMIT ${COMMIT}
 RUN apt-get update && apt-get install -y \
