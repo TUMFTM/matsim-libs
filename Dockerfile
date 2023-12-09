@@ -22,8 +22,8 @@ RUN chmod +x ./matsim.jar
 ENV MATSIM_HOME=${APP_DIR} \
     MATSIM_INPUT=${APP_DIR}/data/input \
     MATSIM_OUTPUT=${APP_DIR}/data/output
-ENV INIRAM '-Xms16g'
-ENV MAXRAM '-Xms16g'
+ENV INIRAM '-Xms30g'
+ENV MAXRAM '-Xms30g'
 ARG COMMIT
 ENV COMMIT ${COMMIT}
 RUN apt-get update && apt-get install -y \
