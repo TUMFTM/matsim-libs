@@ -14,3 +14,4 @@ matsim/src/main/java/Doxyfile
 target
 # ignore output directories:
 output/
+BANNER.txt

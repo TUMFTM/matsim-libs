@@ -4,7 +4,20 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    container_name: matsim-docker
+    container_name: matsim-standard
+    hostname: matsim
+    restart: never
+    deploy:
+      mode: 'global'
+    ports: []
+  matsim-project:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        - MATSIM_PROJECT=project
+        - MATSIM_CONTRIBS=accidents accessibility
+    container_name: matsim-project
     hostname: matsim
     restart: never
     deploy:
@@ -14,7 +27,7 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    container_name: matsim-docker
+    container_name: matsim-debug
     hostname: matsim
     entrypoint: /bin/bash
     restart: never

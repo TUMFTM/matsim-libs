@@ -1,2 +1,0 @@
-PROJECT matsim
-Contribs: accidents accessibility

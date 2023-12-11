@@ -1,14 +1,12 @@
 # NOTE: This is NOT a makefile to compile matsim.  Instead, it performs
 # certain maintenance helper tasks.
-
 QUICK=-Dmaven.test.skip -Dmaven.javadoc.skip -Dsource.skip -Dassembly.skipAssembly=true -DskipTests --offline
-
 #### Docker Settings ####
 ROOT_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 DOCKER_ARGS:=-DskipTests=true -T1C
-#### Customize
-CONTRIBS:=accidents accessibility
-PROJECT:=matsim
+#### Customize via environments, else defaults below
+CONTRIBS?= 
+PROJECT?=matsim
 #PROJECT:=project
 ####!Docker Settings ####
 
@@ -33,6 +31,7 @@ quick:
 
 docker-build:
 ####Base######
+	echo "Project: ${PROJECT}\nContribs: ${CONTRIBS}"
 	cd matsim ; mvn clean ; mvn install ${DOCKER_ARGS}
 ####Contribs######
 	@for i in $(CONTRIBS); do \

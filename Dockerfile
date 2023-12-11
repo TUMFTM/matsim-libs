@@ -7,7 +7,10 @@ RUN apt-get update && apt-get install -y \
     figlet build-essential\
     && rm -rf /var/lib/apt/lists/*
 
-RUN make docker-build \
+ARG MATSIM_PROJECT=matsim
+ARG MATSIM_CONTRIBS=
+
+RUN make docker-build CONTRIBS="${MATSIM_CONTRIBS}" PROJECT="${MATSIM_PROJECT}" \
     && echo "$(mvn -q help:evaluate -Dexpression=project.version -DforceStdout=true)" > VERSION.txt \
     && figlet -f slant "MATSim $(cat VERSION.txt)" >> BANNER.txt \
     && echo "Image build date: $(date --iso-8601=seconds)" >> BANNER.txt
