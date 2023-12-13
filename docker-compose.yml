@@ -4,35 +4,31 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
+    environment:
+      - INIRAM=-Xms8g
+      - MAXRAM=-Xmx8g
     container_name: matsim-standard
     hostname: matsim
     restart: never
     deploy:
       mode: 'global'
     ports: []
-  matsim-project:
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
-      args:
-        - MATSIM_PROJECT=project
-        - MATSIM_CONTRIBS=accidents accessibility
-    container_name: matsim-project
-    hostname: matsim
-    restart: never
-    deploy:
-      mode: 'global'
-    ports: []
   matsim-debug:
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
-    container_name: matsim-debug
-    hostname: matsim
+    extends:
+      file: docker-compose.yml
+      service: matsim
     entrypoint: /bin/bash
-    restart: never
-    deploy:
-      mode: 'global'
-    ports: []
     volumes:
       - .:/opt/matsim
+  matsim-ftm-tum-sbb:
+    extends:
+      file: docker-compose.yml
+      service: matsim
+    build:
+      args:
+        - MATSIM_PROJECT=ftm-tum-sbb
+        - MATSIM_CONTRIBS=sbb-extensions
+    container_name: matsim-ftm-tum-sbb
+    volumes:
+      - ./data/input/scenario-sim-6/:/opt/matsim/data/input
+      - ./data/output:/opt/matsim/data/output

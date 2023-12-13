@@ -13,7 +13,7 @@
         <module>examples</module>
         <module>benchmark</module>
         <module>contribs</module>
-        <module>project</module>
+        <module>projects/ftm-tum-sbb</module>
     </modules>
 
     <licenses>
@@ -24,7 +24,6 @@
         </license>
     </licenses>
     <inceptionYear>2005</inceptionYear>
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

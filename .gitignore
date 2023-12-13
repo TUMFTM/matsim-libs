@@ -15,3 +15,5 @@ target
 # ignore output directories:
 output/
 BANNER.txt
+data/input/*
+!data/input/.gitkeep

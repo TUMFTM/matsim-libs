@@ -29,15 +29,19 @@ matsim-quick:
 quick:
 	mvn clean install ${QUICK}
 
-docker-build:
-####Base######
-	echo "Project: ${PROJECT}\nContribs: ${CONTRIBS}"
+docker-build-base:
 	cd matsim ; mvn clean ; mvn install ${DOCKER_ARGS}
+####!Docker-Build-Base######
+
+docker-build-project:
+	echo "Project: ${PROJECT}\nContribs: ${CONTRIBS}"
 ####Contribs######
 	@for i in $(CONTRIBS); do \
 		cd "${ROOT_DIR}/contribs/$$i" ; mvn clean ; mvn install --fail-at-end ${DOCKER_ARGS}; \
 	done
 ####Compile Project######
-	mvn -f pom.xml clean package -P docker --projects ${PROJECT} ${DOCKER_ARGS} -am -nsu
+	mvn -f pom.xml clean package -P docker --projects projects/${PROJECT} ${DOCKER_ARGS} -am -nsu
 	echo "Project: ${PROJECT}\nContribs: ${CONTRIBS}" > BANNER.txt
-####!Docker-Build######
+####!Docker-Build-Project######
+
+docker-build: docker-build-base docker-build-project
