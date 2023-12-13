@@ -13,7 +13,7 @@ matsim/docs/doxygen/html
 matsim/src/main/java/Doxyfile
 target
 # ignore output directories:
-output/
 BANNER.txt
 data/input/*
 !data/input/.gitkeep
+data/output/*
